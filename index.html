@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LibRelate | Library Relations Project</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="progress-line" id="progressLine"></div>
+
+  <!-- NAVBAR -->
+  <header class="topbar">
+
+    <a href="#home" class="logo">
+      <span class="logo-mark">LR</span>
+      <span>LibRelate</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#overview">Overview</a>
+      <a href="#sets">Sets</a>
+      <a href="#relation">Relation</a>
+      <a href="#analytics">Analytics</a>
+      <a href="#conclusion">Conclusion</a>
+    </nav>
+
+    <button class="theme-btn" id="themeBtn">☾</button>
+
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        <span class="pulse"></span>
+        COLLEGE MATHEMATICS PROJECT
+      </div>
+
+      <h1>
+        Library Management<br>
+        <span>Using Relations</span>
+      </h1>
+
+      <p class="hero-text">
+        A mathematical model that connects library members
+        with the books they borrow using ordered pairs and relations.
+      </p>
+
+      <div class="hero-actions">
+
+        <a class="btn primary" href="#overview">
+          Explore Project →
+        </a>
+
+        <button class="btn ghost" id="presentationBtn">
+          Presentation Mode
+        </button>
+
+      </div>
+
+      <div class="team-strip">
+        <span>44. Kalyani Ghogare</span>
+        <span>45. Atharwa Phatake</span>
+        <span>46. Atharva Murade</span>
+        <span>48. Priyanka Gawade</span>
+      </div>
+
+    </div>
+
+
+    <!-- HERO VISUAL -->
+    <div class="hero-visual">
+
+      <div class="relation-orb">
+
+        <div class="orb-label">
+          R ⊆ M × B
+        </div>
+
+        <div class="orb-node m1">M1</div>
+        <div class="orb-node m2">M2</div>
+        <div class="orb-node m3">M3</div>
+
+        <div class="orb-node b1">B2</div>
+        <div class="orb-node b2">B4</div>
+
+        <svg viewBox="0 0 420 320">
+
+          <defs>
+            <linearGradient id="lineGrad">
+              <stop stop-color="#818cf8"/>
+              <stop offset="1" stop-color="#22d3ee"/>
+            </linearGradient>
+          </defs>
+
+          <path d="M70 80 C145 20 245 20 330 75"/>
+          <path d="M70 155 C155 110 245 110 330 145"/>
+          <path d="M70 230 C155 190 245 210 330 215"/>
+          <path d="M70 155 C145 260 250 280 330 215"/>
+
+        </svg>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- OVERVIEW -->
+  <section class="section" id="overview">
+
+    <div class="section-heading">
+
+      <div class="section-tag">
+        01 · PROJECT
+      </div>
+
+      <h2>
+        From Library Records to Mathematics
+      </h2>
+
+      <p>
+        Every borrowing record becomes an ordered pair.
+        Together, those pairs form a relation.
+      </p>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+      <article class="feature-card">
+        <div class="icon purple">↔</div>
+        <h3>Model the Records</h3>
+        <p>
+          Connect members and books with the relation
+          <b>R ⊆ M × B</b>.
+        </p>
+      </article>
+
+
+      <article class="feature-card">
+        <div class="icon cyan">⌘</div>
+        <h3>Represent Relations</h3>
+        <p>
+          Write borrowing records as ordered pairs
+          and visualize them.
+        </p>
+      </article>
+
+
+      <article class="feature-card">
+        <div class="icon amber">▦</div>
+        <h3>Find Patterns</h3>
+        <p>
+          Identify multiple borrowing and frequently
+          borrowed books.
+        </p>
+      </article>
+
+
+      <article class="feature-card">
+        <div class="icon green">✓</div>
+        <h3>Analyze Activity</h3>
+        <p>
+          Find active and inactive members from
+          the domain of R.
+        </p>
+      </article>
+
+    </div>
+
+
+    <div class="equation-card">
+
+      <span>Core relation</span>
+
+      <strong>
+        R ⊆ M × B
+      </strong>
+
+      <small>
+        (m, b) ∈ R means member <b>m</b>
+        has borrowed book <b>b</b>.
+      </small>
+
+    </div>
+
+  </section>
+
+
+  <!-- SETS -->
+  <section class="section alt" id="sets">
+
+    <div class="section-heading">
+
+      <div class="section-tag">
+        02 · THE TWO SETS
+      </div>
+
+      <h2>Members × Books</h2>
+
+      <p>
+        The relation connects two well-defined sets,
+        each containing five elements.
+      </p>
+
+    </div>
+
+
+    <div class="sets-grid">
+
+      <div class="set-card">
+
+        <div class="set-top">
+
+          <span class="set-symbol">M</span>
+
+          <div>
+            <h3>Members</h3>
+            <p>Set M</p>
+          </div>
+
+          <b>5</b>
+
+        </div>
+
+        <div class="chips" id="memberChips"></div>
+
+      </div>
+
+
+      <div class="connector">
+        ×
+      </div>
+
+
+      <div class="set-card books-card">
+
+        <div class="set-top">
+
+          <span class="set-symbol">B</span>
+
+          <div>
+            <h3>Books</h3>
+            <p>Set B</p>
+          </div>
+
+          <b>5</b>
+
+        </div>
+
+        <div class="chips" id="bookChips"></div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- RELATION -->
+  <section class="section" id="relation">
+
+    <div class="section-heading">
+
+      <div class="section-tag">
+        03 · RELATION
+      </div>
+
+      <h2>
+        Explore the 7 Borrowing Pairs
+      </h2>
+
+      <p>
+        Click any pair to highlight its member and book
+        in the relationship map.
+      </p>
+
+    </div>
+
+
+    <div class="relation-layout">
+
+      <div class="relation-list-card">
+
+        <div class="mini-title">
+          Relation R
+        </div>
+
+        <div class="pair-list" id="pairList"></div>
+
+        <div class="relation-stat">
+
+          <strong>7</strong>
+
+          <span>
+            ordered pairs
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="network-card">
+
+        <div class="network-header">
+
+          <span>
+            Interactive Relation Map
+          </span>
+
+          <span class="live-dot">
+            ● Live
+          </span>
+
+        </div>
+
+
+        <div class="network" id="network">
+
+          <div
+            class="network-col"
+            id="networkMembers">
+          </div>
+
+          <svg
+            id="networkSvg"
+            viewBox="0 0 650 390"
+            preserveAspectRatio="none">
+          </svg>
+
+          <div
+            class="network-col"
+            id="networkBooks">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ANALYTICS -->
+  <section class="section alt" id="analytics">
+
+    <div class="section-heading">
+
+      <div class="section-tag">
+        04 · ANALYTICS
+      </div>
+
+      <h2>
+        What Does the Relation Tell Us?
+      </h2>
+
+      <p>
+        Simple counts reveal meaningful
+        library-management insights.
+      </p>
+
+    </div>
+
+
+    <div class="metrics">
+
+      <div class="metric">
+        <span>Possible pairs</span>
+        <strong>25</strong>
+        <small>5 × 5</small>
+      </div>
+
+      <div class="metric">
+        <span>Actual pairs</span>
+        <strong>7</strong>
+        <small>n(R)</small>
+      </div>
+
+      <div class="metric accent">
+        <span>Relation density</span>
+        <strong>28%</strong>
+        <small>7 / 25</small>
+      </div>
+
+      <div class="metric">
+        <span>Books / member</span>
+        <strong>1.4</strong>
+        <small>7 / 5</small>
+      </div>
+
+    </div>
+
+
+    <div class="analytics-grid">
+
+      <article class="panel">
+
+        <div class="panel-title">
+
+          <div>
+            <span class="section-tag">
+              BORROWING
+            </span>
+
+            <h3>
+              Books per Member
+            </h3>
+          </div>
+
+          <span class="pill">
+            7 total
+          </span>
+
+        </div>
+
+        <div
+          class="bar-chart"
+          id="memberChart">
+        </div>
+
+      </article>
+
+
+      <article class="panel">
+
+        <div class="panel-title">
+
+          <div>
+            <span class="section-tag">
+              POPULARITY
+            </span>
+
+            <h3>
+              Borrowers per Book
+            </h3>
+          </div>
+
+          <span class="pill hot">
+            Top: B2, B4
+          </span>
+
+        </div>
+
+        <div
+          class="bar-chart"
+          id="bookChart">
+        </div>
+
+      </article>
+
+    </div>
+
+
+    <div class="insight-grid">
+
+      <article class="insight success">
+
+        <span>●</span>
+
+        <div>
+          <b>Active members</b>
+          <strong>4 / 5</strong>
+          <p>
+            M1, M2, M3 and M5 borrowed at least one book.
+          </p>
+        </div>
+
+      </article>
+
+
+      <article class="insight danger">
+
+        <span>●</span>
+
+        <div>
+          <b>Inactive member</b>
+          <strong>M4</strong>
+          <p>
+            M4 has no ordered pair in R.
+          </p>
+        </div>
+
+      </article>
+
+
+      <article class="insight warning">
+
+        <span>★</span>
+
+        <div>
+          <b>Most borrowed</b>
+          <strong>B2 & B4</strong>
+          <p>
+            Both books were borrowed twice.
+          </p>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- DETAILS -->
+  <section class="section" id="details">
+
+    <div class="section-heading">
+
+      <div class="section-tag">
+        05 · MATHEMATICAL DETAILS
+      </div>
+
+      <h2>
+        Domain, Range & Multiple Borrowing
+      </h2>
+
+    </div>
+
+
+    <div class="detail-grid">
+
+      <article class="panel">
+
+        <span class="section-tag">
+          DOMAIN
+        </span>
+
+        <h3>
+          Members who borrowed
+        </h3>
+
+        <div class="formula">
+          Dom(R) = { M1, M2, M3, M5 }
+        </div>
+
+        <p>
+          M4 is outside the domain because
+          it has no borrowing pair.
+        </p>
+
+      </article>
+
+
+      <article class="panel">
+
+        <span class="section-tag">
+          RANGE
+        </span>
+
+        <h3>
+          Books borrowed
+        </h3>
+
+        <div class="formula">
+          Ran(R) = { B1, B2, B3, B4, B5 }
+        </div>
+
+        <p>
+          Every book appears in at least
+          one relation pair.
+        </p>
+
+      </article>
+
+
+      <article class="panel full">
+
+        <span class="section-tag">
+          MULTIPLE BORROWING
+        </span>
+
+        <h3>
+          Member borrowing profile
+        </h3>
+
+        <div class="table-wrap">
+
+          <table>
+
+            <thead>
+
+              <tr>
+                <th>Member</th>
+                <th>Books</th>
+                <th>Count</th>
+                <th>Status</th>
+              </tr>
+
+            </thead>
+
+            <tbody id="memberTable"></tbody>
+
+          </table>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- CARTESIAN PRODUCT -->
+  <section class="section alt">
+
+    <div class="section-heading">
+
+      <div class="section-tag">
+        06 · CARTESIAN PRODUCT
+      </div>
+
+      <h2>
+        All 25 Possible Pairs
+      </h2>
+
+      <p>
+        Highlighted cells are the seven pairs
+        that belong to R.
+      </p>
+
+    </div>
+
+
+    <div class="table-wrap product-table">
+
+      <table id="cartesianTable"></table>
+
+    </div>
+
+
+    <div class="formula-note">
+      n(M × B) = n(M) × n(B)
+      = 5 × 5 = <b>25</b>
+    </div>
+
+  </section>
+
+
+  <!-- CONCLUSION -->
+  <section class="section" id="conclusion">
+
+    <div class="conclusion">
+
+      <div class="section-tag">
+        07 · CONCLUSION
+      </div>
+
+      <h2>
+        Relations Turn Records Into Insights.
+      </h2>
+
+      <p>
+        R contains 7 of 25 possible pairs.
+        M1, M2 and M3 each borrowed two books;
+        M5 borrowed one. B2 and B4 are the most
+        borrowed books, while M4 is the only
+        inactive member.
+      </p>
+
+
+      <div class="conclusion-actions">
+
+        <button
+          class="btn primary"
+          id="printBtn">
+          Print / Save PDF
+        </button>
+
+        <a
+          class="btn ghost dark-ghost"
+          href="#home">
+          Back to Top ↑
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-brand">
+      LibRelate
+    </div>
+
+    <p>
+      Library Management System
+      Using Relations in Mathematics
+    </p>
+
+    <p class="copyright">
+      College Mathematics Project · 2026
+    </p>
+
+  </footer>
+
+
+  <div
+    class="toast"
+    id="toast">
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
